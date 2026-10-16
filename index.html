@@ -1,0 +1,582 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clémentine — Soins & Bien-être</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=IM+Fell+English:ital@0;1&family=Jost:wght@300;400&display=swap"
+      rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- CURSEUR PERSONNALISÉ -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-dot" id="cursorDot"></div>
+
+    <!-- PARTICULES -->
+    <canvas id="starsCanvas"></canvas>
+
+    <!-- NAVIGATION -->
+    <nav id="navbar">
+      <div class="nav-logo">✦ Clémentine Théobald ✦</div>
+      <ul class="nav-links">
+        <li><a href="#presentation">Qui suis-je</a></li>
+        <li><a href="#reiki">Reiki</a></li>
+        <li><a href="#sophrologie">Sophrologie</a></li>
+        <li><a href="#hypnose">Hypnose</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <ul>
+        <li><a href="#presentation" class="mobile-link">Qui suis-je</a></li>
+        <li><a href="#reiki" class="mobile-link">Reiki</a></li>
+        <li><a href="#sophrologie" class="mobile-link">Sophrologie</a></li>
+        <li><a href="#hypnose" class="mobile-link">Hypnose</a></li>
+        <li><a href="#contact" class="mobile-link">Contact</a></li>
+      </ul>
+    </div>
+
+    <!--HERO-->
+    <header class="hero" id="hero">
+      <div class="hero-glow"></div>
+      <div class="moon-container">
+        <div class="moon">
+          <div class="moon-crater c1"></div>
+          <div class="moon-crater c2"></div>
+          <div class="moon-crater c3"></div>
+        </div>
+        <div class="moon-halo"></div>
+      </div>
+      <div class="hero-content">
+        <p class="hero-eyebrow fade-up">Clémentine Théobald</p>
+        <h1 class="hero-title fade-up">Soins & Bien-être</h1>
+        <div class="hero-divider fade-up">
+          <span class="divider-line"></span>
+          <span class="divider-symbol">☽ ✦ ☾</span>
+          <span class="divider-line"></span>
+        </div>
+        <p class="hero-subtitle fade-up">
+          Praticienne en Reiki, Sophrologue &amp; Hypnopraticienne basée à
+          Chamalières (63400).
+        </p>
+        <a href="#reiki" class="hero-cta fade-up">Découvrir mes soins</a>
+      </div>
+      <div class="scroll-indicator">
+        <div class="scroll-dot"></div>
+      </div>
+    </header>
+
+    <!-- PRÉSENTATION -->
+    <section class="presentation-section" id="presentation">
+      <!-- QUI SUIS-JE -->
+      <div class="pres-block reveal">
+        <div class="pres-text">
+          <div class="service-label">Présentation</div>
+          <h2 class="service-title">
+            <span class="service-title-deco">✦</span>
+            Qui suis-je
+            <span class="service-title-deco">✦</span>
+          </h2>
+          <div class="service-body">
+            <p class="lead-line">
+              Je vous accompagne vers le mieux-être en combinant Reiki,
+              Sophrologie et Hypnose — avec pour boussole
+              <strong>l'écoute</strong>, <strong>la bienveillance</strong> et
+              <strong>le respect de votre rythme</strong>.
+            </p>
+            <p>
+              Je m'appelle Clémentine Théobald. Depuis toujours, les autres
+              viennent naturellement à moi pour parler, se confier ou simplement
+              trouver un peu d'apaisement — bien avant même que je ne connaisse
+              le monde de l'énergétique.
+            </p>
+            <p>
+              Il y a huit ans, un profond bouleversement personnel a changé le
+              cours de ma vie. Ce que j'ai d'abord vécu comme une épreuve est
+              devenu le point de départ d'une véritable renaissance : j'ai
+              exploré ma sensibilité et mis des mots sur cette connexion
+              particulière que je percevais avec les autres.
+            </p>
+
+            <blockquote class="intro-quote intro-quote-mid">
+              "Lorsque nous mettons des mots sur les maux,<br />
+              <em
+                >les dits maux deviennent des mots dits et cessent d'être
+                maudits."</em
+              >
+              <span class="quote-author">— Guy Corneau</span>
+            </blockquote>
+
+            <p>
+              Cette quête de sens m'a menée vers de belles rencontres, des
+              formations et un important travail sur moi-même. Je me suis formée
+              au <strong>Reiki</strong> (3ᵉ degré), puis à la
+              <strong>sophrologie</strong> pour intégrer des outils concrets de
+              reconnexion au présent, et enfin à l'<strong>hypnose</strong>,
+              fascinée par les ressources de l'inconscient.
+            </p>
+            <p>
+              Ma vie de maman a aussi façonné ma manière d'accompagner : plus
+              d'écoute, de patience et de compréhension des besoins de chacun.
+              Cela m'a naturellement menée vers l'accompagnement d'enfants
+              présentant des troubles du neurodéveloppement, dans le cadre de
+              mon métier d'AESH et auprès d'élèves en ITEP.
+            </p>
+            <p>
+              Aujourd'hui, je mets au service de chacun l'ensemble de ces
+              expériences. Je ne prétends pas avoir toutes les réponses, mais je
+              crois profondément que chaque personne possède en elle les
+              ressources nécessaires pour avancer — mon rôle est de vous
+              accompagner pour les retrouver, à votre rythme, dans un espace de
+              confiance.
+            </p>
+          </div>
+
+          <blockquote class="intro-quote">
+            "Si tu veux voler,<br />
+            <em>laisse tomber tout ce qui te retient."</em>
+          </blockquote>
+        </div>
+
+        <div class="pres-gallery">
+          <img
+            src="images/clem_visage.jpeg"
+            alt="Portrait de Clémentine Théobald"
+            class="pres-img pres-img-tall" />
+          <img
+            src="images/clem_dos.jpeg"
+            alt="Clémentine dans son cabinet"
+            class="pres-img" />
+          <img
+            src="images/table.jpeg"
+            alt="Table de soin dans le cabinet"
+            class="pres-img" />
+        </div>
+      </div>
+
+      <!-- SÉPARATEUR INTERNE -->
+      <div class="pres-sep">
+        <span class="divider-symbol">☽ ✦ ☾</span>
+      </div>
+
+      <!-- LE CABINET -->
+      <div class="pres-block pres-block-reverse reveal">
+        <div class="pres-text">
+          <div class="service-label">L'espace de soin</div>
+          <h2 class="service-title">
+            <span class="service-title-deco">✦</span>
+            Le cabinet
+            <span class="service-title-deco">✦</span>
+          </h2>
+          <div class="service-body">
+            <p>
+              Situé à Chamalières, mon cabinet est pensé comme une parenthèse
+              hors du temps : lumière douce, matières naturelles et calme
+              propice au lâcher-prise. Chaque détail est choisi pour que vous
+              puissiez, dès votre arrivée, poser vos épaules et vous sentir
+              pleinement accueilli·e.
+            </p>
+            <p>
+              Que vous veniez pour une séance de Reiki allongée, un
+              accompagnement en sophrologie debout ou une séance d'hypnose,
+              l'espace s'adapte à votre pratique tout en gardant cette même
+              atmosphère chaleureuse et apaisante.
+            </p>
+          </div>
+        </div>
+
+        <div class="pres-gallery">
+          <img
+            src="images/table.jpeg"
+            alt="Le cabinet vu depuis l'entrée"
+            class="pres-img" />
+          <img
+            src="images/table_massage.jpeg"
+            alt="Table de massage installée dans le cabinet"
+            class="pres-img pres-img-tall" />
+        </div>
+      </div>
+    </section>
+
+    <!-- REIKI -->
+    <section class="service-section reiki-section" id="reiki">
+      <div class="section-bg-symbol">☽</div>
+      <div class="service-inner reveal">
+        <div class="service-label">Pratique principale</div>
+        <h2 class="service-title">
+          <span class="service-title-deco">✦</span>
+          Reiki
+          <span class="service-title-deco">✦</span>
+        </h2>
+        <p class="service-subtitle">
+          Prendre soin de soi avec douceur, en écoutant ce que le corps et le
+          cœur ont à raconter
+        </p>
+        <div class="service-body">
+          <p>
+            Parfois, nous traversons des périodes où tout semble plus lourd : le
+            stress, les émotions, la fatigue, les doutes... Le Reiki offre un
+            espace pour ralentir, souffler et revenir à soi.
+          </p>
+
+          <p>
+            Je vous accueille dans un cadre doux et bienveillant, où vous pouvez
+            déposer ce que vous portez, sans avoir à être fort, à expliquer ou à
+            faire quoi que ce soit de particulier. Je pratique aussi sur don
+            libre le charme du feu, du sang et les soins de guérison à distance.
+          </p>
+
+          <p>
+            Durant la séance, vous restez confortablement allongée et habillée.
+            Par l'apposition des mains, le Reiki accompagne le corps et l'esprit
+            vers un état de profonde détente. C'est un temps pour vous, une
+            parenthèse où il devient possible de relâcher les tensions,
+            d'apaiser le mental et de retrouver un peu plus d'harmonie
+            intérieure.
+          </p>
+
+          <p>
+            Chaque personne vit cette expérience à sa manière. Certains
+            ressentent beaucoup de choses, d'autres simplement un profond calme.
+            Tout est juste.
+          </p>
+
+          <p>
+            Avant et après la séance, nous prenons un moment d'échange afin
+            d'accueillir ce qui est présent pour vous.
+          </p>
+
+          <p>
+            <strong>
+              Le Reiki est une pratique de bien-être complémentaire et ne se
+              substitue pas à un avis ou à un traitement médical.
+            </strong>
+          </p>
+        </div>
+
+        <div class="reiki-gallery">
+          <img
+            src="images/clem_allonge.jpeg"
+            alt="Séance de Reiki, personne allongée en soin"
+            class="reiki-img" />
+          <img
+            src="images/clem_allonge_mains.jpeg"
+            alt="Soin Reiki par apposition des mains"
+            class="reiki-img" />
+        </div>
+
+        <div class="service-cards">
+          <div class="scard">
+            <div class="scard-icon">🌿</div>
+            <h3>Soin Reiki</h3>
+            <p>
+              Rééquilibrage des centres énergétiques pour un retour à l'harmonie
+              intérieure.
+            </p>
+          </div>
+          <div class="scard">
+            <div class="scard-icon">🌑</div>
+            <h3>Nettoyage énergétique</h3>
+            <p>
+              Libération des énergies stagnantes, purification de l'aura et du
+              champ énergétique.
+            </p>
+          </div>
+          <div class="scard">
+            <div class="scard-icon">🕯️</div>
+            <h3>Charme du feu</h3>
+            <p>
+              Pratique traditionnelle de protection et de transformation par
+              l'énergie du feu.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOPHROLOGIE -->
+    <section class="service-section sophro-section" id="sophrologie">
+      <div class="section-bg-symbol">◯</div>
+      <div class="service-inner reveal">
+        <div class="service-label">Enfants &amp; Adultes</div>
+        <h2 class="service-title">
+          <span class="service-title-deco">✦</span>
+          Sophrologie
+          <span class="service-title-deco">✦</span>
+        </h2>
+        <p class="service-subtitle">Gestion des émotions par la sophrologie</p>
+        <div class="service-body">
+          <p>
+            Pour moi, la sophrologie n'est pas seulement une technique de
+            relaxation. C'est un véritable apprentissage de soi, qui permet de
+            créer un dialogue entre le corps, les émotions et le mental.
+          </p>
+
+          <p>
+            Je pratique une sophrologie essentiellement debout, car le mouvement
+            favorise une meilleure conscience du corps, de la respiration et des
+            ressentis. Cette approche est dynamique, concrète et facilement
+            réutilisable dans la vie quotidienne. <br />
+            Les séances sont accessibles à tous, dans la mesure où il n'existe
+            pas de contre-indication médicale au travail debout. Les exercices
+            sont toujours adaptés aux capacités et au rythme de chacun.
+          </p>
+
+          <p>
+            Au fil des séances, vous apprendrez à mieux respirer, à reconnaître
+            les messages de votre corps, à comprendre vos émotions et à
+            développer des outils simples pour retrouver un équilibre au
+            quotidien.
+          </p>
+
+          <p>La sophrologie peut vous accompagner pour :</p>
+          <ul>
+            <li>Mieux gérer le stress et l'anxiété ;</li>
+            <li>Retrouver un état de calme et d'apaisement ;</li>
+            <li>Améliorer le sommeil ;</li>
+            <li>Renforcer la confiance en soi ;</li>
+            <li>Mieux vivre les émotions ;</li>
+            <li>
+              Préparer un examen, un entretien, une prise de parole ou un
+              événement important ;
+            </li>
+            <li>
+              Retrouver un équilibre durable entre le corps, le mental et les
+              émotions.
+            </li>
+          </ul>
+        </div>
+
+        <div class="service-cards">
+          <div class="scard">
+            <div class="scard-icon">🌸</div>
+            <h3>Enfants</h3>
+            <p>
+              Colères, angoisses, difficultés scolaires… la sophrologie offre
+              aux enfants des clés concrètes.
+            </p>
+          </div>
+          <div class="scard">
+            <div class="scard-icon">🌙</div>
+            <h3>Adultes</h3>
+            <p>
+              Stress, surmenage, émotions difficiles — retrouvez ancrage et
+              sérénité dans le quotidien.
+            </p>
+          </div>
+          <div class="scard">
+            <div class="scard-icon">✨</div>
+            <h3>Suivi personnalisé</h3>
+            <p>
+              Chaque parcours en sophrologie est unique, adapté à votre rythme
+              et à vos besoins profonds.
+            </p>
+          </div>
+        </div>
+
+        <p class="gentle-note">
+          Tu n'es pas une machine.
+          <em
+            >Ton "mieux" est différent chaque jour — et c'est bien correct comme
+            ça.</em
+          >
+        </p>
+      </div>
+    </section>
+
+    <!-- HYPNOSE -->
+    <section class="service-section hypnose-section" id="hypnose">
+      <div class="section-bg-symbol">☾</div>
+      <div class="service-inner reveal">
+        <div class="service-label">Thérapie</div>
+        <h2 class="service-title">
+          <span class="service-title-deco">✦</span>
+          Hypnose
+          <span class="service-title-deco">✦</span>
+        </h2>
+        <p class="service-subtitle">
+          L'hypnose est un formidable outil d'accompagnement qui permet
+          d'accéder aux ressources de l'inconscient. Contrairement aux idées
+          reçues, vous restez pleinement acteur de votre séance : vous ne perdez
+          ni le contrôle, ni votre libre arbitre.
+        </p>
+        <div class="service-body">
+          <p>
+            L'état hypnotique est un état naturel de conscience modifiée que
+            nous expérimentons tous au quotidien. Dans cet espace, il devient
+            plus facile d'explorer certains fonctionnements, de mobiliser ses
+            ressources et d'ouvrir de nouvelles perspectives de changement.
+          </p>
+          <p>
+            J'utilise l'hypnose pour accompagner de nombreuses problématiques,
+            notamment :
+          </p>
+          <ul>
+            <li>Les peurs et les phobies ;</li>
+            <li>La gestion des émotions et du stress ;</li>
+            <li>
+              Certaines douleurs (en complément d'un suivi médical lorsqu'il est
+              nécessaire) ;
+            </li>
+            <li>Les addictions et les comportements répétitifs ;</li>
+            <li>Le manque de confiance en soi ;</li>
+            <li>Les étapes de vie ou les blocages émotionnels.</li>
+          </ul>
+
+          <p>
+            Selon vos besoins, je peux également intégrer une approche
+            transgénérationnelle. Cette démarche consiste à explorer l'histoire
+            familiale, les schémas répétitifs, les croyances ou les loyautés
+            inconscientes qui peuvent influencer notre manière de vivre
+            aujourd'hui. Ce travail ne cherche pas à désigner des responsables,
+            mais à mieux comprendre certains mécanismes afin de retrouver
+            davantage de liberté dans ses choix.
+          </p>
+          <p>
+            Pour moi, l'hypnose n'est pas une pratique isolée : elle vient
+            naturellement compléter les autres outils que j'utilise. Chaque
+            accompagnement est unique. Selon votre objectif et votre histoire,
+            je peux associer l'hypnose, la sophrologie ou l'approche énergétique
+            afin de vous proposer un accompagnement personnalisé, toujours dans
+            le respect de votre rythme et de vos besoins.
+          </p>
+        </div>
+
+        <div class="service-tags">
+          <span class="tag">Addictions</span>
+          <span class="tag">Stress</span>
+          <span class="tag">Phobies</span>
+          <span class="tag">Douleurs</span>
+          <span class="tag">Confiance en soi</span>
+          <span class="tag">Sommeil</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SÉPARATEUR -->
+    <div class="section-divider">
+      <svg
+        viewBox="0 0 1440 60"
+        xmlns="http://www.w3.org/2000/svg"
+        preserveAspectRatio="none">
+        <path
+          d="M0 30 Q360 0 720 30 Q1080 60 1440 30"
+          fill="none"
+          stroke="var(--gold)"
+          stroke-width="0.8"
+          opacity="0.4" />
+      </svg>
+      <div class="divider-ornament">☽ ✦ ☾</div>
+    </div>
+
+    <!--CONTACT-->
+    <section class="contact-section" id="contact">
+      <div class="contact-inner reveal">
+        <h2 class="contact-title">Prendre rendez-vous</h2>
+        <p class="contact-subtitle">
+          Je vous accueille avec bienveillance pour un premier échange<br />
+          Ensemble, nous trouverons le soin le plus adapté à votre chemin.
+        </p>
+        <div class="contact-cards">
+          <a href="tel:+33659458389" class="contact-card" id="tel-link">
+            <div class="contact-card-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5">
+                <path
+                  d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.95 9.8a19.79 19.79 0 01-3.07-8.68A2 2 0 012.85 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 9.91a16 16 0 006.06 6.06l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
+              </svg>
+            </div>
+            <div class="contact-card-info">
+              <span class="contact-card-label">Téléphone</span>
+              <span class="contact-card-value" id="phone-display"
+                >+33 6 59 45 83 89</span
+              >
+            </div>
+          </a>
+          <a
+            href="mailto:clem.theobald@yahoo.fr"
+            target="_blank"
+            class="contact-card"
+            id="mail-link">
+            <div class="contact-card-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5">
+                <path
+                  d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+            </div>
+            <div class="contact-card-info">
+              <span class="contact-card-label">Email</span>
+              <span class="contact-card-value" id="email-display"
+                >clem.theobald@yahoo.fr</span
+              >
+            </div>
+          </a>
+          <a
+            href="https://instagram.com/clementinetheobald?igsh=eWhpNjJodnd6OBp"
+            target="_blank"
+            class="contact-card"
+            id="insta-link">
+            <div class="contact-card-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                <circle cx="12" cy="12" r="4" />
+                <circle
+                  cx="17.5"
+                  cy="6.5"
+                  r="1"
+                  fill="currentColor"
+                  stroke="none" />
+              </svg>
+            </div>
+            <div class="contact-card-info">
+              <span class="contact-card-label">Instagram</span>
+              <span class="contact-card-value" id="insta-display"
+                >@clementinetheobald</span
+              >
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-moon">☽</div>
+      <p class="footer-tagline">Reiki · Sophrologie · Hypnose</p>
+      <ul class="footer-legal">
+        <li>
+          <a href="mentions_legales.html" target="_blank">Mentions légales</a>
+        </li>
+        <li>
+          <a href="politique_conf.html" target="_blank"
+            >Politique de confidentialité</a
+          >
+        </li>
+        <li><a href="CGU.html" target="_blank">CGU</a></li>
+      </ul>
+      <p class="footer-copy">© 2025 Clémentine. Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
